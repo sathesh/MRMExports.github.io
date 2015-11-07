@@ -652,13 +652,13 @@ input.search-form:hover {
 }
 
 #services {
-  background: #000 url(../images/services/bg_services.png);
+ /* background: #000 url(../images/services/certificate_bg_1400x694.jpg);*/
   background-size: cover;
 }
 
 #services .lead,
 #services h2{
-  color: #fff;
+  /*color: #fff;*/
 }
 
 .services-wrap {
