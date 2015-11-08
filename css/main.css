@@ -948,6 +948,27 @@ a.accordion-toggle  i{
   border-bottom: 0 none;
 }
 
+#mrm-aboutus {
+  background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+#mrm-aboutus {
+  color: #fff;
+  text-align: left;
+}
+
+#mrm-aboutus h2 { 
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+#mrm-aboutus h3 { 
+  color: #fff;
+}
+
 #partner {
   background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;
   background-size: cover;
