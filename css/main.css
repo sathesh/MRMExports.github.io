@@ -2003,6 +2003,10 @@ textarea#message{
   margin-bottom: 20px;
 }
 
+#rice{
+      background: url(../images/mrm/product-page/rice_bg.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
 .blog_category{
   list-style:none;
   margin:0;
