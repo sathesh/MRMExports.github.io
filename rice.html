@@ -14,7 +14,8 @@
 	<link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
-
+    <!-- bxSlider CSS file -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
@@ -80,83 +81,43 @@
 
 </header><!--/header-->
 
-
-<!-- Main Body --->
-		
 <section id="recent-works">
-<div class="container">
+    <div class="container">
 	<div class="center wow fadeInDown">
 		<h2>Rice</h2>
 		<p class="lead">Offer different varieties of raw, idli and basmati rice</p>
 	</div>
-
-	<div class="row">
-	  <div class="col-xs-12 col-sm-4 col-md-4">
-			<div class="recent-work-wrap">
-				<img class="img-responsive" src="images/mrm/product-page/rice/paddy-290x220.jpg" alt="">
-				<div class="overlay">
-					<div class="recent-work-inner">
-						<h3><a href="#">Rice</a> </h3>
-						<p>There are many varieties of rice like Ponni, Sona Masuri, IR64 etc</p>
-						<a class="preview" href="images/mrm/product-page/rice/paddy-290x220.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-4 col-md-4">
-			<div class="recent-work-wrap">
-				<img class="img-responsive" src="images/mrm/product-page/rice/rice-main.jpg" alt="">
-				<!--<div class="overlay">
-					<div class="recent-work-inner">
-						<h3><a href="#">Spices</a></h3>
-						<p>We supply all kind of spices</p>
-						<a class="preview" href="images/mrm/product-page/rice/rice-main.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-					</div>
-				</div> -->
-			</div>
-		</div> 
-
-		<div class="col-xs-12 col-sm-4 col-md-4">
-			<div class="recent-work-wrap">
-				<img class="img-responsive" src="images/mrm/product-page/rice/packing.jpg" alt="">
-				<!--<div class="overlay">
-					<div class="recent-work-inner">
-						<h3><a href="#">Coconut</a></h3>
-						<p>Semi-Husked, Dry Kopra, Desiccated..</p>
-						<a class="preview" href="images/mrm/product-page/rice/rice_290x220.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-					</div>
-				</div>
-			</div>-->
-		</div>
-		</div><!--End of First Row -->
-		
-</div><!--/.container-->
-</section><!--/#recent-works-->
-	
-	
-	
+<div class="slider1">
+  <div class="slide"><img src="images/mrm/product-page/rice/paddy-290x220.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/rice/rice-main.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/rice/packing.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/rice/paddy-290x220.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/rice/rice-main.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/rice/packing.jpg"></div>
+</div>
+</div>
+</section>
 		
 <section id="rice" class="container">
     <div class="blog">
     <div class="row">
         <div class="contact-us">
             <!-- Ponni Rice -->
-            <div class="row">
+          <div class="row">
 				<!--Side product menu -->
-                <div class="col-xs-12 col-sm-2 text-center">
+              <div class="col-xs-12 col-sm-2 text-center">
                     <div class="entry-meta">
                         <ul class="blog_category">
 						<li class="product_sidemenu">Products</li>
-                        <li class="active"><a href="rice.html">Rice</a></li>
-                        <li><a href="coconut.html">Coconut </a></li>
+                        <li ><a href="rice.html">Rice</a></li>
+                        <li><a href="coconut.html">Coconut</a></li>
 						<li><a href="onion.html">Onion </a></li>
                         <li><a href="spices.html">Spices </a></li>
                         <li><a href="pulses.html">Pulses</a></li>
                         </ul>
                     </div>
                 </div> <!--end of side product menu -->
-				<div class="col-xs-12 col-sm-10 blog-content">
+			<div class="col-xs-12 col-sm-10 blog-content">
 				<!--blog content-->
 					<div class="row blog-content">
 						<h2 style="margin-left:30%;margin-bottom:10px">Ponni Raw Rice</h2><br>
@@ -235,9 +196,25 @@
 </footer><!--/#footer-->
 
 <script src="js/jquery.js"></script>
+<!-- jQuery library (served from Google) -->
+<script src="js/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript">
-	$('.carousel').carousel()
+    $(document).ready(function(){
+    $('.slider1').bxSlider({
+    slideWidth : 300,
+    minSlides: 1,
+    maxSlides: 3,
+    slideMargin:5,
+    adaptiveHeight: true,
+    adaptiveHeightSpeed : 1000,
+    auto : true,
+    autocontrols : true
+  });
+});
 </script>
+
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
