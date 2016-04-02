@@ -2046,7 +2046,8 @@ textarea#message{
   width: 150px;
 }
 
-.blog_category li a:hover{
+.blog_category li a:hover,
+.blog_category li a.active{
   background:#c52d2f;
   color: #fff;
 }
