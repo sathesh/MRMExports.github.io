@@ -14,7 +14,8 @@
 <link href="css/animate.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
-
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
 <script src="js/respond.min.js"></script>
@@ -45,8 +46,7 @@
 			</div>
 		</div><!--/.container-->
 	</div><!--/.top-bar-->
-
-	<nav class="navbar navbar-inverse" role="banner">
+    <nav class="navbar navbar-inverse" role="banner">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -64,22 +64,32 @@
 					<li><a href="about-us.html">About Us</a></li>
 					<li class="dropdown active">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <i class="fa fa-angle-down"></i></a>
-						<ul class="dropdown-menu">
-							<li><a href="rice.html">Rice</a></li>
-							<li><a href="coconut.html">Coconut</a></li>
-							<li class="active"><a href="onion.html">Onion</a></li>
-							<li><a href="spices.html">Spices </a></li>
-							<li><a href="pulses.html">Pulses</a></li>
-						</ul>
-					</li>
+<div w3-include-html="header.html"></div>
+</li>
 					<li><a href="contact-us.html">Contact</a></li>                        
 				</ul>
 			</div>
 		</div><!--/.container-->
 	</nav><!--/nav-->
-
 </header><!--/header-->
 
+<section id="recent-works">
+    <div class="container">
+	<div class="center wow fadeInDown">
+		<h2>Onion</h2>
+		<p class="lead" style="text-align:justify">We supply fresh red onion to our clients. The onions are valued for their pungent taste 
+            and eye watering capacity. They are 100% natural and are packed with essential nutrients. 
+		We use hi-tech packing to pack the onions.</p>
+	</div>
+<div class="slider1">
+  <div class="slide"><img src="images/mrm/product-page/onion/om1-400.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/onion/pm-400.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/onion/pm1-400.jpg"></div>
+</div>
+</div>
+</section>
+
+<!--
 <section id="recent-works">
 <div class="container">
 	<div class="center wow fadeInDown">
@@ -127,9 +137,9 @@
 				</div>
 			</div>
 		</div>
-		</div><!--End of First Row -->
+		</div>End of First Row 
 		
-</div><!--/.container-->
+</div>/.container
 </section><!--/#recent-works-->
 
 <section class="container">
@@ -143,11 +153,11 @@
 				   <ul class="blog_category">
 
 					   <li class="product_sidemenu">Products</li>
-						<li><a href="rice.html">Rice </a></li>
-						<li><a href="coconut.html">Coconut </a></li>
-						<li><a href="onion.html">Onion</a></li>
-						<li><a href="spices.html">Spices </a></li>
-						<li><a href="pulses.html">Pulses</a></li>
+						<li><a class="btn btn-default" href="rice.html">Rice </a></li>
+						<li><a class="btn btn-default" href="coconut.html">Coconut </a></li>
+						<li><a class="btn btn-default active" href="onion.html">Onion</a></li>
+						<li><a class="btn btn-default" href="spices.html">Spices </a></li>
+						<li><a class="btn btn-default" href="pulses.html">Pulses</a></li>
 				</ul>
 				</div>
 				</div>
@@ -235,8 +245,33 @@
 
 
 <div w3-include-html="footer.html"></div>
+<script type="text/javascript">
+    $('li a').click(function(e) {
+        e.preventDefault();
+        $('a').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>
 
 <script src="js/jquery.js"></script>
+<!-- jQuery library (served from Google) -->
+<script src="js/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.slider1').bxSlider({
+    slideWidth : 375,
+    minSlides: 1,
+    maxSlides: 3,
+    slideMargin:10,
+    adaptiveHeight: true,
+    adaptiveHeightSpeed : 1000,
+    auto : true,
+    autocontrols : true
+  });
+});
+</script>
 <script src="js/html-include.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
