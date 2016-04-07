@@ -123,6 +123,17 @@ body > section {
   padding-bottom: 55px;
 }
 
+.nav-fixed  h2{
+  font-size: 36px;
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+
+.nav-fixed {
+  text-align: center;
+  padding-bottom: 55px;
+}
+
 .scaleIn {
   -webkit-animation-name: scaleIn;
   animation-name: scaleIn;
