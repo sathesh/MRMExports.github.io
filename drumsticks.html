@@ -19,34 +19,13 @@
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
-	<![endif]-->       
+	<![endif]-->
 	<link rel="shortcut icon" href="images/mrm/home-page/ico/m_black.png">
 </head><!--/head-->
 
 <body>
 
-<header id="header">
-<div class="top-bar">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-xs-4">
-			</div>
-			<div class="col-sm-6 col-xs-8">
-			   <div class="social">
-					<ul class="pull-right">
-					<div class="search">
-						<form role="form">
-							<input type="text" class="search-form" autocomplete="off" placeholder="Search">
-							<i class="fa fa-search"></i>
-						</form>
-				   </div>
-					</ul>
-			   </div>
-			</div>
-		</div>
-	</div><!--/.container-->
-</div><!--/.top-bar-->
-
+<header id="header" class="header-section navbar navbar-fixed-top">
 <nav class="navbar navbar-inverse" role="banner">
 	<div class="container">
 		<div class="navbar-header">
@@ -73,7 +52,7 @@
 					    <li><a href="pulses.html">Pulses</a></li>
 					</ul>
 				</li>
-				<li><a href="contact-us.html">Contact</a></li>                        
+				<li><a href="contact-us.html">Contact</a></li>
 			</ul>
 		</div>
 	</div><!--/.container-->
@@ -84,17 +63,18 @@
 <section id="recent-works">
     <div class="container">
 	<div class="center wow fadeInDown">
-		<h2>Fresh Drumsticks</h2>
+		<h2 style="margin-top:10%">Fresh Drumsticks</h2>
 	</div>
 <div class="slider1">
-  <div class="slide"><img src="images/mrm/product-page/drumsticks/d250x250.jpg"></div>
-  <div class="slide"><img src="images/mrm/product-page/drumsticks/ds.jpg"></div>
-  <div class="slide"><img src="images/mrm/product-page/drumsticks/ds1.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/drumsticks/ds-400.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/drumsticks/dsm-400.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/drumsticks/dsp-400.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/drumsticks/dsp1-400.jpg"></div>
 </div>
 </div>
 </section>
 		
-<section class="container">
+<section class="container" style="margin-top:-10%">
     <div class="blog">
     <div class="row">
         <div class="contact-us">
@@ -121,13 +101,13 @@
 						<h2 style="margin-left:30%;margin-bottom:10px">Fresh Drumsticks</h2><br>
 						<!--Start of ponni pic -->
 						<div class="col-xs-12 col-sm-4 blog-content">
-							<a href="#"><img class="img-responsive img-blog" src="images/mrm/product-page/drumsticks/ds1.jpg" width="100%" alt="" /></a>
+							<a href="#"><img class="img-responsive img-blog" src="images/mrm/product-page/drumsticks/original/ds1.jpg" width="100%" alt="" /></a>
 						</div> <!-- End of pic-->
 						<!--specification-->
                         <div class="col-xs-12 col-sm-6 blog-content">
 							<p style="text-align:justify">We are engaged in offer Fresh Drumsticks in the global market. Sourced from the reliable producers,
                                  our Drumsticks are lengthy and of medium softness.
-                                 They are well examined for infestation, rot and decay at the time of procuring. 
+                                 They are well examined for infestation, rot and decay at the time of procuring.
                                  We pack Drumsticks in optimum quality material to ensure long shelf life.
                                   We assure safe and timely delivery of Drumsticks in bulk quantities with our excellent transportation facilities.
                                    Drumsticks are made available round the year at reasonable prices.</p>
@@ -153,7 +133,7 @@
 
 	</div><!--/.row-->
 </div>
-</section><!--/#blog--> 
+</section><!--/#blog-->
 
 <!--Start of footer-->
 <footer id="footer" class="midnight-blue">
@@ -184,10 +164,10 @@
 <script type="text/javascript">
     $(document).ready(function(){
     $('.slider1').bxSlider({
-    slideWidth : 300,
+    slideWidth : 375,
     minSlides: 1,
     maxSlides: 3,
-    slideMargin:5,
+    slideMargin:10,
     adaptiveHeight: true,
     adaptiveHeightSpeed : 1000,
     auto : true,
