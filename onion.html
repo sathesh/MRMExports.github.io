@@ -13,6 +13,7 @@
 <link href="css/prettyPhoto.css" rel="stylesheet">
 <link href="css/animate.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
 <link href="css/responsive.css" rel="stylesheet">
 
 <!--[if lt IE 9]>
@@ -59,7 +60,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fruits <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Pomegranate</a></li>
+                        <li><a href="pomegranate.html">Pomegranate</a></li>
                     </ul>
                 </li>
 
@@ -78,59 +79,27 @@
 <!--/nav-->
 </header><!--/header-->
 
+<!-- Main Body --->
 <section id="recent-works">
-<div class="container">
+    <div class="container">
 	<div class="nav-fixed wow fadeInDown">
 		<h2>Onion</h2>
 		<p class="lead" style="text-align:justify">We supply fresh red onion to our clients. The onions are valued for their pungent taste
             and eye watering capacity. They are 100% natural and are packed with essential nutrients.
-		We use hi-tech packing to pack the onions.</p>
+		We use hi-tech packing to pack the onions. </p>
 	</div>
+<div class="slider1">
+  <div class="slide"><img src="images/mrm/product-page/onion/pm-400.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/onion/om1-400.jpg"></div>
+  <div class="slide"><img src="images/mrm/product-page/onion/pm1-400.jpg"></div>
+    <div class="slide"><img src="images/mrm/product-page/onion/pmwght-400.jpg"></div>
+</div>
+</div>
+</section>
+<!--End of Slider -->
 
-	<div class="row">
-	  <div class="col-xs-12 col-sm-4 col-md-4">
-			<div class="recent-work-wrap">
-				<img class="img-responsive" src="images/mrm/product-page/onion/om1.jpg" alt="">
-				<div class="overlay">
-					<div class="recent-work-inner">
-						<h3><a href="#">Onion</a> </h3>
-						<p>We supply fresh red, yellow and white onions to our clients.They are 100% natural.</p>
-						<a class="preview" href="images/mrm/product-page/onion/om1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-4 col-md-4">
-			<div class="recent-work-wrap">
-				<img class="img-responsive" src="images/mrm/product-page/onion/pm.jpg" alt="">
-				<div class="overlay">
-					<div class="recent-work-inner">
-						<h3><a href="#">Onion Packaging</a></h3>
-						<p>we do 13.5/15/2.5 kgs per red mesh bag.</p>
-						<a class="preview" href="images/mrm/product-page/onion/pm.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="col-xs-12 col-sm-4 col-md-4">
-			<div class="recent-work-wrap">
-				<img class="img-responsive" src="images/mrm/product-page/onion/pm1.jpg" alt="">
-				<div class="overlay">
-					<div class="recent-work-inner">
-						<h3><a href="#"></a></h3>
-						<p>Wooden pallet stuffing</p>
-						<a class="preview" href="images/mrm/product-page/onion/pm1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div><!--End of First Row -->
-		
-</div><!--/.container-->
-</section><!--/#recent-works-->
-
-<section class="container" style="margin-top:-5%">
+<section id = "onion" class="container">
 <div class="blog">
 	<div class="row">
 			<div class="contact-us">
@@ -163,7 +132,7 @@
 					   Part		: Non Peeled <br>
 						<br>
 					</p>
-				<a class="btn btn-primary readmore" href="contact-us.html">Get quote</a>
+				<a class="btn btn-primary readmore" href="contact-us.html#contact-us">Get quote</a>
 				</div>
 
 				</div> <!--end of row -->
@@ -219,7 +188,7 @@
 						   Part		: Non Peeled <br>
 							<br>
 						</p>
-							<a class="btn btn-primary readmore" href="contact-us.html">Get quote</a>
+							<a class="btn btn-primary readmore" href="contact-us.html#contact-us">Get quote</a>
 						</div>
 						</div>
 						</div>
@@ -235,6 +204,24 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/html-include.js"></script>
+<!-- jQuery library (served from Google) -->
+<script src="js/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.slider1').bxSlider({
+    slideWidth : 375,
+    minSlides: 1,
+    maxSlides: 3,
+    slideMargin:10,
+    adaptiveHeight: true,
+    adaptiveHeightSpeed : 1000,
+    auto : true,
+    autocontrols : true
+  });
+});
+</script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
