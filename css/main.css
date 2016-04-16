@@ -287,7 +287,7 @@ input.search-form:hover {
  }
 
 .navbar-nav>li{
-  margin-left: 35px;
+  margin-left: 5px;
   padding-bottom: 28px;
 }
 
@@ -2035,6 +2035,13 @@ textarea#message{
 
 #onion{
       background: url(../images/mrm/product-page/onion/cover-t.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  margin-top:-5%;
+}
+
+
+#melon{
+      background: url(../images/mrm/product-page/melon/cover.jpg) 100% 100% no-repeat;
   background-size: cover;
   margin-top:-5%;
 }
