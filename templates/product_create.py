@@ -1,9 +1,10 @@
+#!/usr/bin/env python
 import yaml
 from shutil import copyfile
 
 conf = yaml.load(open('daal.schema'))
 
-def replace_text(dict,  file):
+def replace_text(dict,  outfile):
     fin = open(outfile, 'r')
     file_text = fin.read()
     fin.close()
@@ -13,21 +14,33 @@ def replace_text(dict,  file):
     file_text = file_text.replace('###{}###'.format(search_string), replace_string)
     fout = open(outfile, 'w')
     fout.write(file_text)
+    fout.close()
 
     return
 
 def build_side_prod(side_prod_dict, file): 
-    #side_prods = side_prod_dict['side_prods']
-    #side_prods_text = ''
-    #i = 1
-    #key = 'side_prod{}'.format(i)
-    #while key in side_prods:
-    #    copyfile('prod.html.template', outfile)
-    #    
-    #    for j in side_prods[key]:
+    side_prods = side_prod_dict['side_prods']
+    global function_table
+    total_side_txt = ''
+    i = 1
+    key = 'side_prod{}'.format(i)
+    tmp_side_file = '/tmp/sideprod.htm'
+    total_side_txt = ''
+    while key in side_prods:
+        copyfile('sub_prod.html.template', tmp_side_file)
+        for j in side_prods[key]:
+            function_table[j]({j: side_prods[key][j]}, tmp_side_file)
 
-    #    i += 1
-    #    key = 'side_prod{}'.format(i)
+        with open(tmp_side_file, 'r') as f:
+            total_side_txt += f.read()
+
+        total_side_txt += '\n'
+
+        i += 1
+        key = 'side_prod{}'.format(i)
+
+    replace_text({'side_prods': total_side_txt}, file)
+
     return
 
 def build_slider(slider_dict, file): 
@@ -42,6 +55,7 @@ function_table = {
         'product': replace_text,
         'prod_desc': replace_text,
         'name': replace_text,
+        'desc': replace_text,
         'desc1': replace_text,
         'desc2': replace_text,
         'image': replace_text,

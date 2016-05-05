@@ -15,37 +15,37 @@ side_prods:
                   Because of its fragrant, it is considered to be of premium quality. 
                   This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
             desc2: |
-                'Type : Raw'
-                'Length : 7.40 mm'
-                'Moisture : 13% max'
-                'Sortex : 100% max'
-                'Broken : 1- 2% max'
+                Type : Raw
+                Length : 7.40 mm
+                Moisture : 13% max
+                Sortex : 100% max
+                Broken : 1- 2% max
             image: ../images/mrm/product-page/rice/sonamasoori1-290x220.jpg
 
     side_prod2: 
             name: Toor daal
             desc1: >
-                  This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  TOOOOOOOOOR This rice is thin and medium grain. It is light weight, silky and aromatic. 
                   Because of its fragrant, it is considered to be of premium quality. 
                   This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
             desc2: |
-                'Type : Raw'
-                'Length : 7.40 mm'
-                'Moisture : 13% max'
-                'Sortex : 100% max'
-                'Broken : 1- 2% max'
+                Type : TOOOOR Raw
+                Length : 7.40 mm
+                Moisture : 13% max
+                Sortex : 100% max
+                Broken : 1- 2% max
             image: ../images/mrm/product-page/rice/sonamasoori1-290x220.jpg
-    side_prod2: 
-            name: Toor daal
+    side_prod3: 
+            name: Moong  daal
             desc1: >
-                  This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  Moog DaalMoog DaalMoog Daal   This rice is thin and medium grain. It is light weight, silky and aromatic. 
                   Because of its fragrant, it is considered to be of premium quality. 
                   This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
             desc2: |
-                'Type : Raw'
-                'Length : 7.40 mm'
-                'Moisture : 13% max'
-                'Sortex : 100% max'
-                'Broken : 1- 2% max'
+                Type : moong Raw
+                Length : 7.40 mm
+                Moisture : 13% max
+                Sortex : 100% max
+                Broken : 1- 2% max
             image: ../images/mrm/product-page/rice/sonamasoori1-290x220.jpg
      

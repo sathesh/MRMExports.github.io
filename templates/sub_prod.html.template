@@ -15,7 +15,7 @@
 
                 <div class="col-xs-12 col-sm-6 blog-content">
 
-                    <p style="text-align:justify">###desc###</p>
+                    <p style="text-align:justify">###desc1###</p>
                     <p>###desc2###</p>
                     <a class="btn btn-primary readmore" href="../contact/contact-us.html#contact-us">Get quote</a>
                 </div>
