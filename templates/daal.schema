@@ -1,0 +1,51 @@
+product: Daal
+title: Daal | MRM Exports
+prod_desc: Fine..Amazing daal
+slider:
+    - ../images/mrm/product-page/rice/paddy-400.jpg
+    - ../images/mrm/product-page/rice/paddy-400.jpg
+    - ../images/mrm/product-page/rice/paddy-400.jpg
+    - ../images/mrm/product-page/rice/paddy-400.jpg
+    - ../images/mrm/product-page/rice/paddy-400.jpg
+side_prods:
+    side_prod1:
+            name: Urud daal
+            desc1: >
+                  This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  Because of its fragrant, it is considered to be of premium quality. 
+                  This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
+            desc2: |
+                'Type : Raw'
+                'Length : 7.40 mm'
+                'Moisture : 13% max'
+                'Sortex : 100% max'
+                'Broken : 1- 2% max'
+            image: ../images/mrm/product-page/rice/sonamasoori1-290x220.jpg
+
+    side_prod2: 
+            name: Toor daal
+            desc1: >
+                  This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  Because of its fragrant, it is considered to be of premium quality. 
+                  This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
+            desc2: |
+                'Type : Raw'
+                'Length : 7.40 mm'
+                'Moisture : 13% max'
+                'Sortex : 100% max'
+                'Broken : 1- 2% max'
+            image: ../images/mrm/product-page/rice/sonamasoori1-290x220.jpg
+    side_prod2: 
+            name: Toor daal
+            desc1: >
+                  This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  Because of its fragrant, it is considered to be of premium quality. 
+                  This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
+            desc2: |
+                'Type : Raw'
+                'Length : 7.40 mm'
+                'Moisture : 13% max'
+                'Sortex : 100% max'
+                'Broken : 1- 2% max'
+            image: ../images/mrm/product-page/rice/sonamasoori1-290x220.jpg
+     
