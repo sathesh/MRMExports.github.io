@@ -1,5 +1,4 @@
 import yaml
-import re
 from shutil import copyfile
 
 conf = yaml.load(open('daal.schema'))
@@ -18,9 +17,24 @@ def replace_text(dict,  file):
     return
 
 def build_side_prod(side_prod_dict, file): 
+    #side_prods = side_prod_dict['side_prods']
+    #side_prods_text = ''
+    #i = 1
+    #key = 'side_prod{}'.format(i)
+    #while key in side_prods:
+    #    copyfile('prod.html.template', outfile)
+    #    
+    #    for j in side_prods[key]:
+
+    #    i += 1
+    #    key = 'side_prod{}'.format(i)
     return
 
-def build_slider(side_prod_dict, file): 
+def build_slider(slider_dict, file): 
+    slider_data = ''
+    for i in slider_dict['slider']:
+        slider_data = slider_data + '''<div class="slide"><img src="{}"></div>\n'''.format(i)
+    replace_text({'slider':slider_data}, file)
     return
 
 function_table = { 
