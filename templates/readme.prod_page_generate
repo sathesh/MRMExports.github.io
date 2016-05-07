@@ -1,0 +1,39 @@
+Product page automation
+=======================
+Template files: 
+	Text and images fields which would change for each product are marked as '###<fieldname>###' in template files. Ex. title field text is marked as ###title###.
+		- prod.html.template - main template file for the product page
+		- sub_prod.html.template - side product page template
+
+schema file:
+	Schema has the values for the fileds that are marked in templates. Ex. title: Daal | MRM Exports
+		- daal.schema - contains product specific fields in yaml format
+
+How product_create.py works:
+===========================
+1. product_create.py has action functions defined for each field that are in yaml file
+2. It copies prod.html.template to <product>.html
+3. Iterates through input schema file and calls corresponding action function for each field
+
+Ex.1 title field - Action: replace text
+=======================================
+schema:
+------
+title: Daal | MRM Exports
+
+action function defined for title field in product_create.py is replace_text. It would search through <product>.html and replace ###title### with Daal | MRM Exports
+
+Ex.3 slider field - Action: build slider
+========================================
+schema:
+------
+slider:
+    - ../images/mrm/product-page/rice/paddy-400.jpg
+    - ../images/mrm/product-page/rice/paddy-400.jpg
+    - ../images/mrm/product-page/rice/paddy-400.jpg
+    - ../images/mrm/product-page/rice/paddy-400.jpg
+    - ../images/mrm/product-page/rice/paddy-400.jpg
+
+Number of images for slider field can vary. action fuction build_slider() would generate the html code with all images and replace ###slider### in <produt>.html
+
+

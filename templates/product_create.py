@@ -18,6 +18,21 @@ def replace_text(dict,  outfile):
 
     return
 
+def replace_text_multiline(dict,  outfile):
+    fin = open(outfile, 'r')
+    file_text = fin.read()
+    fin.close()
+
+    search_string = dict.keys()[0]
+    replace_string = dict[search_string].replace('\n', '<br>')
+    file_text = file_text.replace('###{}###'.format(search_string), replace_string)
+    fout = open(outfile, 'w')
+    fout.write(file_text)
+    fout.close()
+
+    return
+
+
 def build_side_prod(side_prod_dict, file): 
     side_prods = side_prod_dict['side_prods']
     global function_table
@@ -57,7 +72,7 @@ function_table = {
         'name': replace_text,
         'desc': replace_text,
         'desc1': replace_text,
-        'desc2': replace_text,
+        'desc2': replace_text_multiline,
         'image': replace_text,
         'slider': build_slider,
         'side_prods': build_side_prod,
