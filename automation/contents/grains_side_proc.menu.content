@@ -1,0 +1,11 @@
+<div class="col-xs-12 col-sm-2 text-center">
+<div class="entry-meta">
+<ul class="blog_category">
+<li class="product_sidemenu">Vegetables</li>
+<li><a class="btn btn-default active" href="coconut.html">Coconut</a></li>
+<li><a class="btn btn-default" href="onion.html">Onion </a></li>
+<li><a class="btn btn-default" href="drumstick.html">Drumstick</a></li>
+<li><a class="btn btn-default" href="yam.html">Elephant Yam</a></li>
+</ul>
+</div>
+</div>

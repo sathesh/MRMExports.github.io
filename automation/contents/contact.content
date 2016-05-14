@@ -1,0 +1,47 @@
+<section class="contact-map" id="map">
+  <iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14942278.815570794!2d76.43839175389667!3d23.889005613884137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac69666c5aa781%3A0x3e13e0ba9d6ab1c1!2sMRM+Exports!5e0!3m2!1sen!2sus!4v1461826775996" width="1200" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+<section class="contact-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 sep">
+        <form action="//formspree.io/mrm.iexports@gmail.com" class="contactform" id="contact-form" method="post"
+          name="contact-form">
+          <div class="form-group">
+            <input class="form-control" name="name" placeholder="Name*" type="text">
+          </div>
+          <div class="form-group">
+            <input class="form-control" name="email" placeholder="E-mail*" type="text">
+          </div>
+          <div class="form-group">
+            <input class="form-control" name="Phone" placeholder="Phone" type="text">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" placeholder="Message" rows="6"></textarea>
+          </div>
+          <div class="form-group text-right">
+            <button class="btn btn-primary" name="send">Send</button>
+            <input name="_next" type="hidden" value="//exports.mrmgroup.in/contact/thankyou.html#contact-us">
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-offset-1 col-sm-4">
+        <div class="info-entry">
+          <h4>Address</h4>
+          <p>MRM Group<br>
+            3/197, Morappur<br>
+            Dharmapuri, Tamilnadu<br>
+            India 635305<br>
+        </div>
+        <div class="info-entry">
+          <h4>Call Us</h4>
+          <p><a class="entypo-phone" href="tel:+918548858683">+91 8548858683 (India)</a><br>
+            <a class="entypo-phone" href="tel:+16697778672">+1 (669) 777-8672 (USA)</a><br>
+            <a class="entypo-mail" href="mailto:exports@mrmgroup.in">exports@mrmgroup.in</a><br>
+            <a class="entypo-skype" href="skype:mrm.iexports?call">Skype: mrm.iexports</a><br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

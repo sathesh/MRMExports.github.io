@@ -1,0 +1,55 @@
+proj_root: /Users/jayabal/git/MRMExports.github.io/
+hirarchy: grains
+product: daal
+title: Daal | MRM Exports
+prod_desc: Fine..Amazing daal
+slider:
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+side_prods:
+    section_id_bg_img: /grains/daal/images/rice_bg.jpg
+    #section_id_bg_img: /grains/daal/images/paddy-400.jpg
+    side_prod1:
+            name: Urud daal
+            desc1: >
+                  This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  Because of its fragrant, it is considered to be of premium quality. 
+                  This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
+            desc2: |
+                Type : Raw
+                Length : 7.40 mm
+                Moisture : 13% max
+                Sortex : 100% max
+                Broken : 1- 2% max
+            image: /grains/daal/images/sonamasoori1-290x220.jpg
+
+    side_prod2: 
+            name: Toor daal
+            desc1: >
+                  TOOOOOOOOOR This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  Because of its fragrant, it is considered to be of premium quality. 
+                  This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
+            desc2: |
+                Type : TOOOOR Raw
+                Length : 7.40 mm
+                Moisture : 13% max
+                Sortex : 100% max
+                Broken : 1- 2% max
+            image: /grains/daal/images/sonamasoori1-290x220.jpg
+    side_prod3: 
+            name: Moong  daal
+            desc1: >
+                  Moog DaalMoog DaalMoog Daal   This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  Because of its fragrant, it is considered to be of premium quality. 
+                  This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
+            desc2: |
+                Type : moong Raw
+                Length : 7.40 mm
+                Moisture : 13% max
+                Sortex : 100% max
+                Broken : 1- 2% max
+            image: /grains/daal/images/sonamasoori1-290x220.jpg
+     

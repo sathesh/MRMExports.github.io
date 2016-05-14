@@ -1,0 +1,6 @@
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="#">###menu_name###<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+				###menu_items###
+                        </ul>
+                    </li>

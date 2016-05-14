@@ -1,0 +1,55 @@
+proj_root: /Users/jayabal/git/MRMExports.github.io/ 	# Root directory of the project
+hirarchy: grains					# Menu name
+product: daal						# Sub menu dropdown name and product name
+							# in this ex. grains/daal/daal.html file will be created
+title: Daal | MRM Exports				# Title bar text
+prod_desc: Fine..Amazing daal				# Product description
+slider:							# list of images for the slider
+    - /grains/daal/images/paddy-400.jpg			# These images must be present in given location
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+side_prods:						# list of side products
+    section_id_bg_img: /grains/daal/images/paddy-400.jpg	# background image for the side products
+    side_prod1:							# side product menu
+            name: Urud daal					# Side product name
+            desc1: >						# Side product description
+                  This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  Because of its fragrant, it is considered to be of premium quality. 
+                  This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
+            desc2: |						# multi line description each line will be in separate line in web page
+                Type : Raw
+                Length : 7.40 mm
+                Moisture : 13% max
+                Sortex : 100% max
+                Broken : 1- 2% max
+            image: /grains/daal/images/sonamasoori1-290x220.jpg # Image of the side product
+
+    side_prod2: 
+            name: Toor daal
+            desc1: >
+                  TOOOOOOOOOR This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  Because of its fragrant, it is considered to be of premium quality. 
+                  This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
+            desc2: |
+                Type : TOOOOR Raw
+                Length : 7.40 mm
+                Moisture : 13% max
+                Sortex : 100% max
+                Broken : 1- 2% max
+            image: /grains/daal/images/sonamasoori1-290x220.jpg
+    side_prod3: 
+            name: Moong  daal
+            desc1: >
+                  Moog DaalMoog DaalMoog Daal   This rice is thin and medium grain. It is light weight, silky and aromatic. 
+                  Because of its fragrant, it is considered to be of premium quality. 
+                  This rice is very famous in Singapore, Malaysia and United States. New and old corp are available.
+            desc2: |
+                Type : moong Raw
+                Length : 7.40 mm
+                Moisture : 13% max
+                Sortex : 100% max
+                Broken : 1- 2% max
+            image: /grains/daal/images/sonamasoori1-290x220.jpg
+     

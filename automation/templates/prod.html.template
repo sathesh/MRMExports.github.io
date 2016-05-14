@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Start of head-->
+###site_head###
+<!--/#head-->
+<body>
+
+<!-- start of header navigation-->
+###site_navigation###
+<!--/header navigation-->
+
+<section id="recent-works>
+    <div class="container">
+	<div class="nav-fixed wow fadeInDown">
+   		<h2>###product###</h2>
+		<p class="lead">###prod_desc###</p>
+	</div>
+<div class="slider1">
+  ###slider###
+</div>
+</div>
+</section>
+		
+<section ###section-id-product###>
+    <div class="blog">
+    <div class="row">
+        <div class="contact-us">
+	###side_prods###
+	</div><!--/.contact-us-->
+
+	</div><!--/.row-->
+</div>
+</section><!--/#blog-->
+
+<!--Start of footer-->
+###site_footer###
+<!--/#footer-->
+
+
+<!--Start of scripts -->
+###product_jscript###
+<!--/#scripts -->
+
+
+<!--Start of google analytics -->
+###google_anlytics###
+<!--/#google_anlytics -->
+
+</body>
+</html>

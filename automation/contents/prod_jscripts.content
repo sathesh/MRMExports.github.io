@@ -1,0 +1,25 @@
+<script src="/js/jquery.js"></script>
+<!-- jQuery library (served from Google) -->
+<script src="/js/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.slider1').bxSlider({
+    slideWidth : 375,
+    minSlides: 1,
+    maxSlides: 3,
+    slideMargin:10,
+    adaptiveHeight: true,
+    adaptiveHeightSpeed : 1000,
+    auto : true,
+    autocontrols : true
+  });
+});
+</script>
+
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.prettyPhoto.js"></script>
+<script src="/js/jquery.isotope.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/wow.min.js"></script>
