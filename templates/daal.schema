@@ -1,13 +1,17 @@
+proj_root: /Users/jayabal/git/MRMExports.github.io/
+hirarchy: grains
 product: daal
 title: Daal | MRM Exports
 prod_desc: Fine..Amazing daal
 slider:
-    - ../images/mrm/product-page/rice/paddy-400.jpg
-    - ../images/mrm/product-page/rice/paddy-400.jpg
-    - ../images/mrm/product-page/rice/paddy-400.jpg
-    - ../images/mrm/product-page/rice/paddy-400.jpg
-    - ../images/mrm/product-page/rice/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
+    - /grains/daal/images/paddy-400.jpg
 side_prods:
+    #section_id_bg_img: /grains/daal/images/rice_bg.jpg
+    section_id_bg_img: /grains/daal/images/paddy-400.jpg
     side_prod1:
             name: Urud daal
             desc1: >
@@ -20,7 +24,7 @@ side_prods:
                 Moisture : 13% max
                 Sortex : 100% max
                 Broken : 1- 2% max
-            image: ../images/mrm/product-page/rice/sonamasoori1-290x220.jpg
+            image: /grains/daal/images/sonamasoori1-290x220.jpg
 
     side_prod2: 
             name: Toor daal
@@ -34,7 +38,7 @@ side_prods:
                 Moisture : 13% max
                 Sortex : 100% max
                 Broken : 1- 2% max
-            image: ../images/mrm/product-page/rice/sonamasoori1-290x220.jpg
+            image: /grains/daal/images/sonamasoori1-290x220.jpg
     side_prod3: 
             name: Moong  daal
             desc1: >
@@ -47,5 +51,5 @@ side_prods:
                 Moisture : 13% max
                 Sortex : 100% max
                 Broken : 1- 2% max
-            image: ../images/mrm/product-page/rice/sonamasoori1-290x220.jpg
+            image: /grains/daal/images/sonamasoori1-290x220.jpg
      
