@@ -1,4 +1,3 @@
-proj_root: /Users/jayabal/git/MRMExports.github.io/ 	# Root directory of the project
 hirarchy: grains					# Menu name
 product: daal						# Sub menu dropdown name and product name
 							# in this ex. grains/daal/daal.html file will be created

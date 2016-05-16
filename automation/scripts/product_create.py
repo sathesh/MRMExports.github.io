@@ -7,12 +7,15 @@ from shutil import copyfile
 from buildfns_lib import *
 from config import *
 
+def set_active_menu(menu, outfile):
+    return
 
 def build_site_head(outfile):
     replace_text_with_file_context({'site_head':SITE_HEAD_FILE}, outfile)
 
-def build_site_navigation(outfile):
+def build_site_navigation(menu, outfile):
     replace_text_with_file_context({'site_navigation':SITE_NAVIGATION_FILE}, outfile)
+    set_active_menu(menu, outfile)
 
 def build_site_footer(outfile):
     replace_text_with_file_context({'site_footer':SITE_FOOTER_FILE}, outfile)
@@ -67,6 +70,26 @@ def build_side_prod(side_prod_dict, outfile):
 
     return
 
+def build_sideprod_menu(menu, nav_menuconf):
+    with open(SIDEPROD_MENU_TMPLT_FILE, 'r') as fin:
+        side_menu_text = fin.read()
+    list_text = ''
+    for i in nav_menuconf['menu']:
+        if i.lower() == menu.lower():
+            for j in nav_menuconf['menu'][i]:
+                link = '/{}/{}/{}.html'.format(menu.lower(),
+                                               j.lower(),
+                                               j.lower())
+                list_text += '''<li><a class="btn btn-default"''' \
+                             '''href="{}">{}</a></li>\n'''.format(link, j)
+            break
+
+    side_menu_text = side_menu_text.replace(
+            '###side_prod_menu###', list_text)
+    side_menu_text = side_menu_text.replace(
+            '###menu###', i)
+    return side_menu_text
+
 
 function_table = { 
         'title': replace_text,
@@ -83,27 +106,29 @@ function_table = {
 
 def main():
     parser = OptionParser()
-    parser.add_option("-i", "--schema", dest="infile")
+    parser.add_option("-i", "--prod_schema", dest="infile")
+    parser.add_option("-n", "--navmenu_schema", dest="navmenufile")
     parser.add_option("-o", "--outfile", dest="outfile")
     (opt, args) = parser.parse_args()
 
-    if not opt.infile:
-        print "input file is mandatory!!!"
+    if not opt.infile or not opt.navmenufile:
+        print "prod_schema and navmenu_schema are mandatory!!!"
         parser.print_help()
         return
 
     conf = yaml.load(open(opt.infile))
+    nav_menu_conf = yaml.load(open(opt.navmenufile))
 
     if not opt.outfile:
-        outfile = '{}/{}/{}/{}.html'.format(conf['proj_root'], 
-                                            conf['hirarchy'],
-                                            conf['product'],
-                                            conf['product'])
+        outfile = '{}/{}/{}/{}.html'.format(PROJ_ROOT,
+                                            conf['hirarchy'].lower(),
+                                            conf['product'].lower(),
+                                            conf['product'].lower())
 
     copyfile(PROD_HTML_TMPLT_FILE, outfile)
 
     build_site_head(outfile)
-    build_site_navigation(outfile)
+    build_site_navigation(conf['hirarchy'], outfile)
     build_site_footer(outfile)
     build_prod_jscripts(outfile)
     #build_google_anlytics(outfile)
@@ -112,15 +137,19 @@ def main():
         if i in function_table:
             function_table[i]({i: conf[i]}, outfile)
 
-    side_prod_menu_contfile = '{}/contents/{}_side_prod.menu.content'.format(
-                                            PROJ_ROOT, 
-                                            conf['hirarchy'])
-    if os.path.exists(side_prod_menu_contfile):
-        replace_text_with_file_context(
-                {'side_prod_menu': side_prod_menu_contfile},
-                outfile)
-    else:
-        replace_text({'side_prod_menu': ''}, outfile)
+    side_prod_menu_cont = build_sideprod_menu(conf['hirarchy'].lower(),
+                                              nav_menu_conf)
+    #side_prod_menu_contfile = '{}/contents/{}_side_prod.menu.content'.format(
+    #                                        PROJ_ROOT, 
+    #                                        conf['hirarchy'])
+    #if os.path.exists(side_prod_menu_contfile):
+    #    replace_text_with_file_context(
+    #            {'side_prod_menu': side_prod_menu_contfile},
+    #            outfile)
+    #else:
+    #    replace_text({'side_prod_menu': ''}, outfile)
+
+    replace_text({'side_prod_menu': side_prod_menu_cont}, outfile)
 
     build_section_id_product(conf, outfile)
 

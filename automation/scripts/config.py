@@ -18,6 +18,7 @@ TEMPLATES = PROJ_ROOT + 'automation/templates/'
 PROD_HTML_TMPLT_FILE = TEMPLATES + 'prod.html.template'
 SUBPROD_W_SIDEMENU_TMPLT_FILE = TEMPLATES + 'sub_prod_w_sidemenu.html.template'
 SUBPROD_TMPLT_FILE = TEMPLATES + 'sub_prod.html.template'
+SIDEPROD_MENU_TMPLT_FILE = TEMPLATES + 'sideprod_menu.html.template'
 
 # Nav menu templates
 NAV_TMPLT_FILE = TEMPLATES + 'site_nav_menu.template'
